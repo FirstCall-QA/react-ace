@@ -1,5 +1,5 @@
-import { Ace, Range } from "ace-builds";
-import * as AceBuilds from "ace-builds";
+import { Ace, Range } from "@firstcall-qa/ace-builds";
+import * as AceBuilds from "@firstcall-qa/ace-builds";
 import * as PropTypes from "prop-types";
 import * as React from "react";
 const isEqual = require("lodash.isequal");

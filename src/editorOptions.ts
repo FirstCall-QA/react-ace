@@ -1,4 +1,4 @@
-import * as AceBuilds from "ace-builds";
+import * as AceBuilds from "@firstcall-qa/ace-builds";
 
 type EditorOption =
   | "minLines"
@@ -63,7 +63,7 @@ const getAceInstance = (): typeof AceBuilds => {
     // ace-builds just needs some window object to attach ace to.
     // During SSR even just an empty object will work.
     global.window = {};
-    ace = require("ace-builds");
+    ace = require("@firstcall-qa/ace-builds");
     // And it can be discarded immediately afterward to avoid confusing
     // other libraries that might detect SSR the same way we did.
     delete global.window;
@@ -72,7 +72,7 @@ const getAceInstance = (): typeof AceBuilds => {
     ace = (window as any).ace;
     ace.acequire = (window as any).ace.require || (window as any).ace.acequire;
   } else {
-    ace = require("ace-builds");
+    ace = require("@firstcall-qa/ace-builds");
   }
   return ace;
 };
