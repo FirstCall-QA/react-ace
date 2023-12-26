@@ -1,4 +1,4 @@
-import { Ace } from "ace-builds";
+import { Ace } from "@firstcall-qa/ace-builds";
 
 export interface ICommandManager {
   byName: any;
@@ -130,7 +130,7 @@ export interface IAnnotation {
 
 interface IRenderer extends Ace.VirtualRenderer {
   placeholderNode?: HTMLDivElement;
-  scroller?: HTMLDivElement;
+  scroller: HTMLElement;
 }
 
 export type IAceEditor = Ace.Editor & {
