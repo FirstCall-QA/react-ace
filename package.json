@@ -1,6 +1,6 @@
 {
   "name": "@firstcall-qa/react-ace",
-  "version": "10.1.0-1.4",
+  "version": "10.1.0-1.5",
   "description": "FirstCall QA fork of react-ace",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -81,7 +81,7 @@
     "react"
   ],
   "dependencies": {
-    "@firstcall-qa/ace-builds": "^1.32.2-1.7",
+    "@firstcall-qa/ace-builds": "^1.32.2-1.8",
     "diff-match-patch": "^1.0.5",
     "lodash.get": "^4.4.2",
     "lodash.isequal": "^4.5.0",
